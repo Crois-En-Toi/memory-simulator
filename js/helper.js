@@ -8,7 +8,7 @@ var process_size = [18,17,15,22,30];
 var last = 0;
 
 //first fit algo
-function firstFit(var proc)
+function firstFit(proc)
 {
    for(var i=0; i < memory.length() ; i++)
    {
@@ -24,7 +24,7 @@ function firstFit(var proc)
 }
 
 //next-fit
-function nextFit(var proc)
+function nextFit(proc)
 {
 
 
@@ -43,7 +43,7 @@ function nextFit(var proc)
 }
 
 //best-fit
-function bestFit(var proc)
+function bestFit(proc)
 {
      var index = 0;
      //something very large
@@ -70,7 +70,7 @@ function bestFit(var proc)
 }
 
 //best-fit
-function worstFit(var proc)
+function worstFit(proc)
 {
      var index = 0;
      //something very small
@@ -94,4 +94,13 @@ function worstFit(var proc)
    memory[index]=memory[index]-proc;
 
 
+}
+
+
+//html filling code
+
+//filling up the memory cells
+for(var i=1; i<9; ++i)
+{
+  document.getElementById(i).innerText = memory[i-1];
 }

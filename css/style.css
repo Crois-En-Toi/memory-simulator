@@ -10,11 +10,27 @@ p ,h2{
   display: inline-block;
 }
 
-button{
-  margin-left:6 7%;
+h2{
+  margin-left: 5%;
 }
+button{
+  margin-left:62%;
+}
+
 #memory {
- background-color: green;
+ background-color: grey;
  height: 40vh;
  margin: 10% 5%;
+}
+
+#memory div{
+  background-color: green;
+  border: solid;
+  display: inline-block;
+  height: 40vh;
+  width: 12.06%;
+  text-align: center;
+}
+.memory_blocks{
+  padding-top: 10%
 }
