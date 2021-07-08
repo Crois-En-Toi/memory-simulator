@@ -1,15 +1,20 @@
-#memory{
-  background-color: green;
-  margin-right: 10%;
-}
-
 body{
-  text-align: center;
   font-size: 30px;
 }
 
-#memory .col-lg-1{
- background-color: pink;
- height: 30px;
+h1 ,h2{
+  text-align: center;
+}
 
+p ,h2{
+  display: inline-block;
+}
+
+button{
+  margin-left:6 7%;
+}
+#memory {
+ background-color: green;
+ height: 40vh;
+ margin: 10% 5%;
 }
