@@ -1,0 +1,15 @@
+#memory{
+  background-color: green;
+  margin-right: 10%;
+}
+
+body{
+  text-align: center;
+  font-size: 30px;
+}
+
+#memory .col-lg-1{
+ background-color: pink;
+ height: 30px;
+
+}
