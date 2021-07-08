@@ -23,7 +23,7 @@ button{
  margin: 10% 5%;
 }
 
-#memory div{
+.memory_blocks{
   background-color: green;
   border: solid;
   display: inline-block;
@@ -31,6 +31,9 @@ button{
   width: 12.06%;
   text-align: center;
 }
-.memory_blocks{
-  padding-top: 10%
+
+.filled_blocks{
+  background-color: red;
+  height: 40vh;
+  width: 0%;
 }

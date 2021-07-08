@@ -102,5 +102,5 @@ function worstFit(proc)
 //filling up the memory cells
 for(var i=1; i<9; ++i)
 {
-  document.getElementById(i).innerText = memory[i-1];
+  document.getElementById(i).append(memory[i-1]);
 }
