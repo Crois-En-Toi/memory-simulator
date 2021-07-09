@@ -1,6 +1,7 @@
 
 //free space in memory
 var memory = [20,100,25,50,75,60,10,15];
+const initial_memory = [20,100,25,50,75,60,10,15];
 
 //process size
 var process_size = [18,17,15,22,30];
@@ -97,10 +98,22 @@ function worstFit(proc)
 }
 
 
+
 //html filling code
 
 //filling up the memory cells
 for(var i=1; i<9; ++i)
 {
   document.getElementById(i).append(memory[i-1]);
+}
+
+//filling up the filled cells space
+var temp=0;
+var string="";
+for(var i=1; i<9; ++i)
+{
+  string="";
+  temp=((initial_memory[i-1]-memory[i-1])/initial_memory[i-1])*100;
+  string=temp + string;
+  console.log(document.getElementById(i).childNodes[1].style.width=string);
 }
