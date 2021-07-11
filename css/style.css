@@ -1,29 +1,30 @@
-body{
+body {
   font-size: 30px;
 }
 
-h1 ,h2{
+h1, h2 {
   text-align: center;
 }
 
-p ,h2{
+p, h2 {
   display: inline-block;
 }
 
-h2{
+h2 {
   margin-left: 5%;
 }
+
 button{
-  margin-left:68%;
+margin-right: 13%;
 }
 
 #memory {
- background-color: grey;
- height: 40vh;
- margin: 10% 5%;
+  background-color: grey;
+  height: 40vh;
+  margin: 10% 5%;
 }
 
-.memory_blocks{
+.memory_blocks {
   background-color: green;
   border: solid;
   display: inline-block;
@@ -32,8 +33,31 @@ button{
   text-align: center;
 }
 
-.filled_blocks{
+.filled_blocks {
   background-color: red;
   height: 39.5vh;
   width: 0%;
+}
+
+p,
+label {
+  font: 25px 'Fira Sans', sans-serif;
+}
+
+input {
+  margin: .4rem;
+}
+
+.checkbox{
+
+  margin:auto!important;
+
+}
+
+.checkbox div{
+  display: inline;
+}
+
+.btnc{
+  text-align: right;
 }

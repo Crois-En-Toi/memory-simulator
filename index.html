@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Memory simulation</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -18,24 +17,26 @@
 
     <div id="1" class="memory_blocks">
       <div id="a" class="filled_blocks">
-        </div>
+      </div>
+
     </div>
 
     <div id="2" class="memory_blocks">
       <div id="b" class="filled_blocks">
       </div>
+
     </div>
 
     <div id="3" class="memory_blocks">
       <div id="c" class="filled_blocks">
       </div>
+
     </div>
 
     <div id="4" class="memory_blocks">
       <div id="d" class="filled_blocks">
       </div>
     </div>
-
     <div id="5" class="memory_blocks">
       <div id="r" class="filled_blocks">
       </div>
@@ -60,22 +61,44 @@
 
   </div>
 
-  <div id="bottom_bar">
-    <h2>Process Number: <p id="process_number">0</p>
-    </h2>
-    <button id="next" onclick="">Start</button>
+  <div id="bottom_bar" class="row">
+    <div class="col">
+      <h2>Process Number: <p id="process_number">0 size:</p>
+      </h2>
+    </div>
+
+
+    <div class="checkbox col">
+      <div>
+        <input type="radio" id="ffit" name="algo">
+        <label>First-fit</label>
+      </div>
+
+      <div>
+        <input type="radio" id="nfit" name="algo">
+        <label>Next-fit</label>
+      </div>
+
+      <div>
+        <input type="radio" id="bfit" name="algo">
+        <label>Best-fit</label>
+      </div>
+      <div>
+        <input type="radio" id="wfit" name="algo">
+        <label>worst-fit</label>
+      </div>
+    </div>
+    <div class="col btnc">
+      <button id="next" onclick="">Start</button>
+    </div>
+
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/helper.js"></script>
 </body>
 
